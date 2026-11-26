@@ -12,7 +12,7 @@ RUN bun install --frozen-lockfile
 RUN mkdir -p /root/.local/share/opencode /root/.config/opencode
 
 LABEL org.opencontainers.image.source=https://github.com/8cpo/OpenCodeX
-LABEL org.opencontainers.image.description=OpenCodeX coding agent
+LABEL org.opencontainers.image.description="OpenCodeX coding agent"
 
 ENTRYPOINT ["bun", "run", "--cwd", "packages/cli", "src/index.ts"]
 CMD ["--help"]
